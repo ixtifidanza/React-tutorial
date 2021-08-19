@@ -5,6 +5,8 @@ import Reg from "./img/reg.svg"
 import Logo from "./img/logo.png"
 import Search from "./img/search.svg"
 import Cart from "./img/cart.svg"
+import Banner from "./img/banner.jpg"
+import BannerLogo from "./img/bannerLogo.png"
 
 
 export class Header extends Component {
@@ -19,7 +21,9 @@ export class Header extends Component {
                                 <img src={Phone}  alt="" />
                             </li>
                             <li>
-                              8 (812) 123-45-67 
+                                <a href="tel:+998993139331">
+                                    8 (812) 123-45-67 
+                                </a>
                             </li>
                             <li>
                               Работаем 7 дней в неделю  
@@ -42,18 +46,30 @@ export class Header extends Component {
                     <Container>
                         <Flex>
                         <div>
+                            <a href="">
                             <img src={Logo} alt="" />
+                            </a>
                         </div>
                         <LinksTop>
-                            <a href="">Понравилось</a>
-                            <a href="">Личный кабинет</a>
-                            <a href="">Настройки</a>
-                            <img src={Cart}/>
-                            <img src={Search}/>
+                            <a href="#">Понравилось</a>
+                            <a href="#">Личный кабинет</a>
+                            <a href="#">Настройки</a>
+                            <img src={Cart} alt=""/>
+                            <img src={Search} alt=""/>
                         </LinksTop>
                         </Flex>
                     </Container>
                 </NavbarBottom>
+
+                <HeaderBanner>
+                <img src={Banner} alt=""/>
+                   <Box>
+                    <img src={BannerLogo}  alt=""/>
+                        <BannerText>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.</p>
+                        </BannerText>
+                    </Box> 
+                </HeaderBanner>
             </Wrapper>
         )
     }
@@ -153,6 +169,44 @@ const LinksTop = styled.div`
 const Container = styled.div`
         max-width: 1110px;
         margin: 0 auto;
+ `
+
+ const HeaderBanner = styled.div`
+    position: relative;
+    height: 100vh;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+ `
+
+ const Box = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: auto;
+        height: 100%;
+    }
+        
+}
+    
+ `
+
+ const BannerText = styled.div`
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        width: 730px;
+        margin: 80px 0 154px;
+
  `
 
 
