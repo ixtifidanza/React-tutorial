@@ -46,14 +46,14 @@ export class Header extends Component {
                     <Container>
                         <Flex>
                         <div>
-                            <a href="">
+                            <a href="javascript:void(0)">
                             <img src={Logo} alt="" />
                             </a>
                         </div>
                         <LinksTop>
-                            <a href="#">Понравилось</a>
-                            <a href="#">Личный кабинет</a>
-                            <a href="#">Настройки</a>
+                            <a href="javascript:void(0)">Понравилось</a>
+                            <a href="javascript:void(0)">Личный кабинет</a>
+                            <a href="javascript:void(0)">Настройки</a>
                             <img src={Cart} alt=""/>
                             <img src={Search} alt=""/>
                         </LinksTop>

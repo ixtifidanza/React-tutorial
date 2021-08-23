@@ -4,7 +4,7 @@ import SecBlockBg from "./img/Sec-block-bg.jpg"
 import Product from "./img/product.png"
 
 
-export class Section extends Component {
+export class Seasion extends Component {
     render() {
         return (
             <div>
@@ -55,7 +55,7 @@ export class Section extends Component {
     }
 }
 
-export default Section
+export default Seasion
 
 const SecondSection = styled.div`
     width: 100%;
